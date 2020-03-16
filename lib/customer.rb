@@ -26,8 +26,8 @@ class Customer
   end
   
   def waiters 
-    
+    binding.pry
   end
-  binding.pry
+  
 end
 
