@@ -26,8 +26,8 @@ class Customer
   end
   
   def waiters 
-    Meal.all.collect{|meal|
-      meal.waiter.name 
+    meals.all.collect{|meal|
+      meal.waiter 
     }
   end
   
