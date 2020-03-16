@@ -1,3 +1,5 @@
+require 'pry'
+
 class Customer
   @@all = []
   attr_accessor :name, :age 
@@ -28,3 +30,5 @@ class Customer
       meal.customer
   end
 end
+
+binding.pry
