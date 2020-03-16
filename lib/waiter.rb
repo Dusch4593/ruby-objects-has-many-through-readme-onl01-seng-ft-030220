@@ -1,3 +1,4 @@
+require 'pry'
 class Waiter
   @@all = []
   attr_accessor :name, :years_of_experience 
@@ -20,5 +21,9 @@ class Waiter
     Meal.all.select{|meal|
       meal.waiter == self 
     }
+  end
+  
+  def best_tipper 
+    binding.pry
   end
 end
