@@ -26,7 +26,9 @@ class Customer
   end
   
   def waiters 
-    binding.pry
+    Meal.all.collect{|meal|
+      meal.waiter.name 
+    end
   end
   
 end
